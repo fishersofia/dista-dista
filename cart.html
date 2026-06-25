@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DISTA Cart</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="cart-body">
+    <header class="site-header">
+      <div class="brand-row">
+        <div class="brand-copy">
+          <p class="brand-line"><span class="brand-cipher" data-words="DISTA,ディスタ,ديستا,ДИСТА,迪斯塔,디스타,ΔΙΣΤΑ,דיסטא">DISTA</span>&#32;&#8212;&#32;exchange company</p>
+          <p class="brand-line">Every box is someone&#8217;s version of a place</p>
+        </div>
+        <p class="brand-social">tgk/inst:<br />dista.world</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="./index.html#about">About</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./network.html">Network</a>
+        <a class="is-active" href="./cart.html"><span>Cart <span class="cart-nav-count" data-cart-indicator>(0)</span></span></a>
+      </nav>
+    </header>
+
+    <main class="cart-page">
+      <section class="cart-shell">
+        <div class="cart-shell__header">
+          <p class="cart-shell__kicker">CART</p>
+          <h1 class="cart-shell__title">Selected objects</h1>
+        </div>
+
+        <section class="cart-minimal-grid">
+          <section class="cart-minimal-list" aria-labelledby="cart-items-title">
+            <div class="cart-minimal-head">
+              <h2 id="cart-items-title">Objects in cart</h2>
+              <span id="cart-page-count">0</span>
+            </div>
+            <div class="cart-minimal-items" id="cart-page-items">
+              <p class="cart-minimal-empty">Cart is empty.</p>
+            </div>
+          </section>
+
+          <aside class="cart-minimal-summary" aria-labelledby="cart-summary-title">
+            <div class="cart-minimal-head">
+              <h2 id="cart-summary-title">Selected objects</h2>
+            </div>
+            <div class="cart-summary-intro">
+              <p class="cart-summary-intro__kicker">Summary</p>
+              <p class="cart-summary-intro__text">
+                Review the objects in your exchange, leave your email and get a payment link with the next steps.
+              </p>
+            </div>
+            <div class="cart-minimal-summary__rows">
+              <div class="cart-minimal-row">
+                <span>Items</span>
+                <span id="cart-summary-items">0</span>
+              </div>
+              <div class="cart-minimal-row">
+                <span>Total</span>
+                <span id="cart-summary-total">$0</span>
+              </div>
+            </div>
+            <div class="cart-minimal-checkout">
+              <label class="cart-email-label" for="cart-email">Email</label>
+              <input
+                class="cart-email-input"
+                id="cart-email"
+                type="email"
+                placeholder="your@email.com"
+                autocomplete="email"
+              />
+              <button class="cart-minimal-button" id="cart-pay-button" type="button">Request payment link</button>
+            </div>
+            <div class="cart-summary-note">
+              <p class="cart-summary-note__title">What happens next</p>
+              <p class="cart-summary-note__text">
+                We send a payment link, delivery details and the next instructions for your order.
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <footer class="cart-message" id="cart-message" hidden>
+          <p>
+            A payment link and further information will be sent to
+            <span id="cart-message-email"></span>.
+          </p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
